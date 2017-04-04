@@ -15,6 +15,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # This tells git to ignore the place where it stores itself
 echo ".cfg" >> .gitignore
+
+# This assumes you have an SSH key associated with your GitHub account
+# If you don't, just use https instead and enter your password as required
 git clone --bare git@github.com:maxg203/dotfiles-2.git $HOME/.cfg
 
 config config --local status.showUntrackedFiles no
