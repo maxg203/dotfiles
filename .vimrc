@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 
 filetype plugin indent on
