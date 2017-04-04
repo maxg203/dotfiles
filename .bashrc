@@ -118,5 +118,5 @@ fi
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
-alias config='/usr/bin/git --git-dir=/home/max/.cfg/ --work-tree=/home/max'
+
 alias config='/usr/bin/git --git-dir=/home/max/.cfg/ --work-tree=/home/max'
