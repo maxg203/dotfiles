@@ -11,7 +11,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+"Plugin 'altercation/vim-colors-solarized'
+
 call vundle#end()
+
+set background=dark
+syntax enable
+"colorscheme solarized
 
 filetype plugin indent on
 
