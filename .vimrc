@@ -46,6 +46,11 @@ set tabstop=4           " use 4 spaces to represent tab
 set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
+set copyindent
+
+" Fix vim search
+set hlsearch
+set incsearch
 
 " Fix tabs for TypeScript
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
