@@ -38,6 +38,7 @@ let g:solarized_style="dark"
 let g:solarized_contrast="high"
 let g:solarized_termcolors=256
 let g:solarized_visibility="high"
+set background=dark
 colorscheme solarized
 
 " Fix tabs for Python
