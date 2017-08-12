@@ -18,7 +18,7 @@ echo ".cfg" >> .gitignore
 
 # This assumes you have an SSH key associated with your GitHub account
 # If you don't, just use https instead and enter your password as required
-git clone --bare git@github.com:maxg203/dotfiles-2.git $HOME/.cfg
+git clone --bare https://github.com/maxg203/dotfiles-2.git $HOME/.cfg
 
 config config --local status.showUntrackedFiles no
 config checkout
