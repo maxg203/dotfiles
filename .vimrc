@@ -22,6 +22,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sjl/vitality.vim'
 Plugin 'sjl/gundo.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
@@ -60,3 +62,9 @@ autocmd FileType typescript setlocal number
 
 " Key bindings
 nnoremap <C-R> :GundoToggle<CR>
+
+" Highlight long lines
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#111111
+  autocmd BufEnter * match OverLength /\%79v.*/
+augroup END
