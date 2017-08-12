@@ -10,7 +10,6 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 Now manage your dotfiles just like any other repository except that you should now use the `config` alias instead of `git`.
 
 ## Install these dotfiles on another system
-
 **Warning:** The use of the `--force` flag will overwrite existing dotfiles on the system if it finds any.
 ``` shell
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'

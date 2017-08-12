@@ -21,6 +21,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sjl/vitality.vim'
+Plugin 'sjl/gundo.vim'
 
 call vundle#end()
 
@@ -56,3 +57,6 @@ set incsearch
 " Fix tabs for TypeScript
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
 autocmd FileType typescript setlocal number
+
+" Key bindings
+nnoremap <C-R> :GundoToggle<CR>
