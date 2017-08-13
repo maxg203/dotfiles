@@ -98,6 +98,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Fix tmux issue on macOS Sierra
+export EVENT_NOKQUEUE=1
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs

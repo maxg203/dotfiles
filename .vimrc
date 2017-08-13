@@ -20,7 +20,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'sjl/vitality.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -65,11 +64,13 @@ autocmd FileType typescript setlocal sw=2 ts=2 sts=2
 autocmd FileType typescript setlocal number
 
 " Key bindings
-nnoremap <C-R> :GundoToggle<CR>
+nnoremap <C-U> :GundoToggle<CR>
 
 " Highlight long lines
-" TODO: Apply this to Python files only
-" augroup vimrc_autocmds
-"   autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#111111
-"   autocmd BufEnter * match OverLength /\%80v.*/
-" augroup END
+" TODO: Apply this to Python files only, below is broken
+" if &filetype == 'python'
+"   augroup vimrc_autocmds
+"     autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#111111
+"     autocmd BufEnter * match OverLength /\%80v.*/
+"   augroup END
+" endif
