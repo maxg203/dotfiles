@@ -68,7 +68,8 @@ autocmd FileType typescript setlocal number
 nnoremap <C-R> :GundoToggle<CR>
 
 " Highlight long lines
-augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#111111
-  autocmd BufEnter * match OverLength /\%80v.*/
-augroup END
+" TODO: Apply this to Python files only
+" augroup vimrc_autocmds
+"   autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#111111
+"   autocmd BufEnter * match OverLength /\%80v.*/
+" augroup END
