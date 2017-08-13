@@ -36,13 +36,21 @@ syntax enable
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 
-" Set up lovely colour scheme
+" Exclude things from ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+" Set up a lovely colour scheme
 let g:solarized_style="dark"
 let g:solarized_contrast="high"
 let g:solarized_termcolors=256
 let g:solarized_visibility="high"
+let g:airline_theme='dark'
 set background=dark
 colorscheme solarized
+
+" Fix vim search
+set hlsearch
+set incsearch
 
 " Fix tabs for Python
 set expandtab           " enter spaces when tab is pressed
@@ -51,10 +59,6 @@ set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set copyindent
-
-" Fix vim search
-set hlsearch
-set incsearch
 
 " Fix tabs for TypeScript
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
@@ -66,5 +70,5 @@ nnoremap <C-R> :GundoToggle<CR>
 " Highlight long lines
 augroup vimrc_autocmds
   autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#111111
-  autocmd BufEnter * match OverLength /\%79v.*/
+  autocmd BufEnter * match OverLength /\%80v.*/
 augroup END
