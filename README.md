@@ -15,7 +15,7 @@ Now manage your dotfiles just like any other repository except that you should n
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 git clone --bare https://github.com/maxg203/dotfiles-2.git $HOME/.cfg
 config checkout --force
-source ~/install.sh >/dev/null
+source ~/install.sh
 ```
 
 ## Usage
