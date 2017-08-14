@@ -13,7 +13,7 @@ Now manage your dotfiles just like any other repository except that you should n
 **Warning:** The use of the `--force` flag will overwrite existing dotfiles on the system if it finds any.
 ``` shell
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-git clone --bare https://github.com/maxg203/dotfiles-2.git $HOME/.cfg
+git clone --bare https://github.com/maxg203/dotfiles.git $HOME/.cfg
 config checkout --force
 source ~/install.sh
 ```
