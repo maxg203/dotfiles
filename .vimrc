@@ -23,12 +23,14 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'sjl/gundo.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 
 filetype plugin indent on
 
 set splitright
+set splitbelow
 syntax enable
 
 " Set up Syntastic
@@ -63,9 +65,6 @@ set copyindent
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
 autocmd FileType typescript setlocal number
 
-" Key bindings
-nnoremap <C-U> :GundoToggle<CR>
-
 " Highlight long lines
 " TODO: Apply this to Python files only, below is broken
 " if &filetype == 'python'
@@ -74,3 +73,17 @@ nnoremap <C-U> :GundoToggle<CR>
 "     autocmd BufEnter * match OverLength /\%80v.*/
 "   augroup END
 " endif
+
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+let mapleader="'"
+
+"  --- Key bindings ---
+nnoremap <C-U> :GundoToggle<CR>
+set pastetoggle=<leader>b
