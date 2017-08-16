@@ -38,7 +38,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 
 " Exclude things from ctrlp
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|DS_Store\|git'
 
 " Set up a lovely colour scheme
 let g:solarized_style="dark"
