@@ -10,7 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jason0x43/vim-js-indent'
