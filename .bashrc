@@ -104,7 +104,7 @@ export EVENT_NOKQUEUE=1
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
-# export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 source /usr/local/bin/virtualenvwrapper.sh
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
