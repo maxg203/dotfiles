@@ -85,6 +85,9 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 let mapleader="'"
 
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 "  --- Key bindings ---
 set pastetoggle=<leader>b
 
