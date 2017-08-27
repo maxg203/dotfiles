@@ -124,3 +124,5 @@ export NVM_DIR="$HOME/.nvm"
 
 alias pyc='find ./ -name "*.pyc" -print'
 alias rmpyc='find ./ -name "*.pyc" -delete'
+alias v='vim'
+alias nv='nvim'
