@@ -11,6 +11,6 @@ echo
 echo "Thank you for installing Max's dotfiles! Enjoy."
 
 # Install neovim using either Homebrew or Linuxbrew
-sudo apt install linuxbrew-wrapper
-sudo apt install linuxbrew-wrapper
+sudo apt-get update -y
+sudo apt install linuxbrew-wrapper -y
 brew install neovim
