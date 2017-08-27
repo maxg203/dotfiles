@@ -66,7 +66,7 @@ set copyindent
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2
 autocmd FileType typescript setlocal number
 
-" Highlight long lines
+" Highlight long line endings
 " TODO: Apply this to Python files only, below is broken
 " if &filetype == 'python'
 "   augroup vimrc_autocmds
