@@ -24,6 +24,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'keith/swift.vim'
 
 call vundle#end()
 
@@ -64,7 +65,7 @@ set copyindent
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2 expandtab number
 autocmd FileType python setlocal sw=4 ts=4 sts=4 expandtab nonumber
 
-" Highlight long lines
+" Highlight long line endings
 " TODO: Apply this to Python files only, below is broken
 " if &filetype == 'python'
 "   augroup vimrc_autocmds
@@ -82,6 +83,9 @@ endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 let mapleader="'"
+
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 "  --- Key bindings ---
 set pastetoggle=<leader>b

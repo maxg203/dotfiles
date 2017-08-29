@@ -6,6 +6,7 @@ git init --bare $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+ 
 ```
 Now manage your dotfiles just like any other repository except that you should now use the `config` alias instead of `git`.
 
@@ -16,6 +17,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 git clone --bare https://github.com/maxg203/dotfiles.git $HOME/.cfg
 config checkout --force
 source ~/install.sh
+ 
 ```
 
 ## Usage
