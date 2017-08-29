@@ -61,9 +61,8 @@ set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set copyindent
 
-" Fix tabs for TypeScript
-autocmd FileType typescript setlocal sw=2 ts=2 sts=2
-autocmd FileType typescript setlocal number
+autocmd FileType typescript setlocal sw=2 ts=2 sts=2 expandtab number
+autocmd FileType python setlocal sw=4 ts=4 sts=4 expandtab nonumber
 
 " Highlight long lines
 " TODO: Apply this to Python files only, below is broken
