@@ -126,7 +126,7 @@ alias pyc='find ./ -name "*.pyc" -print'
 alias rmpyc='find ./ -name "*.pyc" -delete'
 alias v='vim'
 alias nv='nvim'
-alias update='source ~/update.sh >/dev/null 2>/dev/null && echo "Updated successfully!"'
+alias update='source ~/update.sh >/dev/null 2>~/.update_log.out && echo "Updated successfully!"'
 alias gs='gulp serve --auth-env'
 
 source ~/.bash_secure
