@@ -126,3 +126,6 @@ alias pyc='find ./ -name "*.pyc" -print'
 alias rmpyc='find ./ -name "*.pyc" -delete'
 alias v='vim'
 alias nv='nvim'
+alias gs='gulp serve --auth-env'
+
+source ~/.bash_secure
