@@ -128,5 +128,7 @@ alias v='vim'
 alias nv='nvim'
 alias update='source ~/update.sh >/dev/null 2>~/.update_log.out && echo "Updated successfully!"'
 alias gs='gulp serve --auth-env'
+alias tslines='find ./ -path "*.ts" -type f | xargs wc -l'
+alias pylines='find ./ -path "*.py" -type f | xargs wc -l'
 
 source ~/.bash_secure
