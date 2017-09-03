@@ -1,4 +1,4 @@
-config pull
+config pull >~/.git_update.out
 source ~/.vimrc
 echo -ne '\n' | vim -c 'PluginInstall' -c 'qa!'
 source ~/.bashrc
