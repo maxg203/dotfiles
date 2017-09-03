@@ -25,3 +25,6 @@ Use the `config` alias in place of `git` (i.e. `config status` would be equivila
 
 ## Update
 Once installed, use the alias `update` to pull the latest changes from this repository, source the dotfiles and check that all the vim has all its plugins installed.
+
+## My Terminals
+I personally use the Xenial default GNOME Terminal on Linux and iTerm2 on macOS. These dotfiles work great with these especially in my opinion. I do not use Windows for development much so if you do... good luck!
