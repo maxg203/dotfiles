@@ -25,6 +25,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'keith/swift.vim'
+Plugin 'ElmCast/elm-vim'
 
 call vundle#end()
 
@@ -64,6 +65,7 @@ set copyindent
 
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2 expandtab number
 autocmd FileType python setlocal sw=4 ts=4 sts=4 expandtab nonumber
+autocmd FileType elm setlocal sw=4 sts=4 ts=4 nonumber
 
 " Highlight long line endings
 " TODO: Apply this to Python files only, below is broken
