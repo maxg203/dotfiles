@@ -130,6 +130,7 @@ alias update='source ~/update.sh >/dev/null 2>&1 && echo "Updated successfully!"
 alias gs='gulp serve --auth-env'
 alias tslines='find ./ -path "*.ts" -type f | xargs wc -l'
 alias pylines='find ./ -path "*.py" -type f | xargs wc -l'
+alias phplines='find ./ -path "*.php" -type f | xargs wc -l'
 
 touch ~/.bash_secure || exit
 source ~/.bash_secure
