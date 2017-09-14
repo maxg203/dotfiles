@@ -1,7 +1,9 @@
 cd
 
 config config --local status.showUntrackedFiles no
-echo ".cfg" >> .gitignore
+if ![ -f ~/.gitignore ]; then
+    echo ".cfg" >> .gitignore
+fi
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim > /dev/null
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
