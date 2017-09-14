@@ -8,6 +8,7 @@ export ZSH=/Users/Max/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME=""
+export DISABLE_AUTO_UPDATE="true"
 
 plugins=(git)
 
