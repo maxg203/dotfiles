@@ -7,17 +7,7 @@ export ZSH=/Users/Max/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME=""
 export DISABLE_AUTO_UPDATE="true"
-
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-autoload -U promptinit; promptinit
-prompt pure
-
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 # If not running interactively, don't do anything
 case $- in
@@ -56,3 +46,26 @@ export NVM_DIR="$HOME/.nvm"
 
 touch ~/.bash_secure || exit
 source ~/.bash_secure
+
+source ~/.antigen.zsh
+
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme ""
+
+# Tell Antigen that you're done.
+antigen apply
+
+autoload -U promptinit; promptinit
+prompt pure
