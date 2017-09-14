@@ -2,3 +2,4 @@
 .cfg
 .virtualenvs
 .bash_secure
+.zsh_history
