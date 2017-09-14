@@ -23,7 +23,7 @@ source ~/.bashrc
 source ~/.zshrc
 tmux source-file ~/.tmux.conf
 
-declare -a packages=('cowsay')
+declare -a packages=('cowsay', 'thefuck', 'zsh')
 for package in "${packages[@]}"
 do
     echo "Installing ${package}..."
