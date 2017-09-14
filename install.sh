@@ -1,7 +1,9 @@
 cd
 
 config config --local status.showUntrackedFiles no
-if ![ -f ~/.gitignore ]; then
+if [ -f ~/.gitignore ]; then
+    echo "Existing gitignore file was not modified."
+else
     echo ".cfg" >> .gitignore
 fi
 
