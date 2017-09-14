@@ -10,7 +10,7 @@ export ZSH=/Users/Max/.oh-my-zsh
 ZSH_THEME=""
 export DISABLE_AUTO_UPDATE="true"
 
-plugins=(git, zsh-syntax-highlighting)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
