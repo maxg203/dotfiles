@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 cd
 source ~/.aliases
 
@@ -22,6 +22,7 @@ curl -L git.io/antigen > ~/.antigen.zsh && echo
 
 # Vim
 echo "Don't worry about vim complaining... we're just installing vim plugins!"
-echo -ne '\n' | vim -c 'PluginInstall' -c 'qa!' && echo
+echo -ne '\n' | vim -c 'PluginInstall' -c 'qa!'
+echo
 
 echo "Thank you for installing Max's dotfiles! Enjoy."
