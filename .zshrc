@@ -30,9 +30,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-if [ -d ~/projects ]; then
-    cd ~/projects
-fi
+# if [ -d ~/projects ]; then
+#     cd ~/projects
+# fi
 
 # eval "$(rbenv init -)"
 eval $(thefuck --alias)

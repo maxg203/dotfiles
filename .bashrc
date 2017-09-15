@@ -92,9 +92,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-# TODO: Should ideally check if directory exists first (for new installations)
-cd ~/projects
-
 # eval "$(rbenv init -)"
 eval $(thefuck --alias)
 
