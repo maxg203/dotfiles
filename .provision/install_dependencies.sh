@@ -9,7 +9,7 @@ install_system() {
     fi
 }
 
-if [ -x "$(command -v apt)" ]; then
+if [ -x "$(command -v apt-get)" ]; then
     sudo apt-get update -y
 fi
 
