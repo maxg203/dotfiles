@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 cd
 source ~/.aliases
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Git
 config clone --bare https://github.com/maxg203/dotfiles.git $HOME/.cfg
