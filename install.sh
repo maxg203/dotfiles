@@ -1,4 +1,7 @@
 cd
+source ~/.aliases
+git clone --bare https://github.com/maxg203/dotfiles.git $HOME/.cfg
+config checkout --force
 
 source ~/.provision/install_dependencies.sh
 
@@ -9,7 +12,7 @@ else
     echo ".cfg" >> .gitignore
 fi
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim > /dev/null
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim >/dev/null
 
 sh -c '$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash

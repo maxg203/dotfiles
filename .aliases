@@ -1,3 +1,4 @@
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias pyc='find ./ -name "*.pyc" -print'
 alias rmpyc='find ./ -name "*.pyc" -delete'
 alias v='vim'

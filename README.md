@@ -13,11 +13,7 @@ Now manage your dotfiles just like any other repository except that you should n
 ## Install these dotfiles on another system
 **Warning:** The use of the `--force` flag will overwrite existing dotfiles on the system if it finds any. But these are obviously better, so its fine!
 ``` shell
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-git clone --bare https://github.com/maxg203/dotfiles.git $HOME/.cfg
-config checkout --force
-source ~/install.sh
-
+curl -o- https://raw.githubusercontent.com/maxg203/dotfiles/master/install.sh | sh
 ```
 
 ## Usage
