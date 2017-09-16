@@ -16,6 +16,7 @@ else
 fi
 
 echo && echo "CONFIGURING ALIASES..."
+# XXX: Can't source scripts until after installation has finished for some reason
 source ~/.aliases
 
 echo && echo "INSTALLING DEPENDENCIES..."

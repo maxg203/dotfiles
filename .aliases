@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+
 # TODO: Make 'update' alias available on path (move ~/update.sh to /usr/bin/update)
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias pyc='find ./ -name "*.pyc" -print'
@@ -11,3 +12,4 @@ alias tslines='find ./ -path "*.ts" -type f | xargs wc -l'
 alias pylines='find ./ -path "*.py" -type f | xargs wc -l'
 alias phplines='find ./ -path "*.php" -type f | xargs wc -l'
 alias fatodos='grep -r "# TODO:" .'
+alias fabad='grep -r "# XXX:" .'

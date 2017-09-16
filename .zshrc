@@ -49,6 +49,7 @@ source ~/.bash_secure
 
 source ~/.antigen.zsh
 
+fpath+=($fpath '/home/ubuntu/.nvm/versions/node/v7.7.1/lib/node_modules/pure-prompt/functions')
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
