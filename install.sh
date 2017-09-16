@@ -19,11 +19,11 @@ echo && echo "CONFIGURING ALIASES..."
 source ~/.aliases
 
 echo && echo "INSTALLING DEPENDENCIES..."
-source ~/.provision/install_dependencies.sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim >/dev/null
-sh -c '$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 curl -L git.io/antigen > ~/.antigen.zsh && echo
+source ~/.provision/install_dependencies.sh
+sh -c '$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'
 
 echo && echo "INSTALLING VIM PLUGINS..."
 echo "Don't worry about vim complaining... we're just installing vim plugins!"
