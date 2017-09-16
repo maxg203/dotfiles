@@ -11,7 +11,7 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 Now manage your dotfiles just like any other repository except that you should now use the `config` alias instead of `git`.
 
 ## Install these dotfiles on another system
-**Warning:** The use of the `--force` flag will overwrite existing dotfiles on the system if it finds any. But these are obviously better, so its fine!
+**Warning:** This will replace existing dotfiles if you already have any installed locally.
 ``` shell
 curl -o- https://raw.githubusercontent.com/maxg203/dotfiles/master/install.sh | sh
 ```
