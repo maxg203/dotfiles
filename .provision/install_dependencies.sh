@@ -1,9 +1,9 @@
 install_system() {
-    if [ -x "$(command -v apt)" ]; then
-        sudo apt install $1 -y
-
-    elif [ -x "$(command -v brew)" ]; then
+    if [ -x "$(command -v brew)" ]; then
         brew install $1
+
+    elif [ -x "$(command -v apt)" ]; then
+        sudo apt install $1 -y
     else
         echo "I'm not sure what your package manager is! Please install $1 on your own and run the 'update' command again."
     fi
@@ -14,14 +14,14 @@ if [ -x "$(command -v apt-get)" ]; then
 fi
 
 declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh')
-for system_package in "${system_packages[@]}"
+for package in "${system_packages[@]}"
 do
-    echo "Installing ${system_package}..."
-    install_system $package
+    echo "Installing ${package}..."
+    install_system ${package}
 done
 
 declare -a node_modules=('pure-prompt')
 for module in "${node_modules[@]}"
 do
-    npm install -g module
+    npm install -g ${module}
 done
