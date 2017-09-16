@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 cd
-echo && echo "CONFIGURING ALIASES..."
-source ~/.aliases
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 echo && echo "CLONING DOTFILES FROM GITHUB..."
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config clone --bare https://github.com/maxg203/dotfiles.git $HOME/.cfg
+
 echo && echo "DO GIT THINGS..."
 config checkout --force
 config config --local status.showUntrackedFiles no
@@ -15,6 +14,9 @@ if [ -f ~/.gitignore ]; then
 else
     echo ".cfg" >> .gitignore
 fi
+
+echo && echo "CONFIGURING ALIASES..."
+source ~/.aliases
 
 echo && echo "INSTALL DEPENDENCIES..."
 source ~/.provision/install_dependencies.sh
