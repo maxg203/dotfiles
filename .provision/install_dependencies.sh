@@ -20,8 +20,8 @@ do
     install_system ${package}
 done
 
-nvm install 7.7.1
-nvm use 7.7.1
+nvm install 8.5.0
+nvm use 8.5.0
 
 declare -a node_modules=('pure-prompt')
 for module in "${node_modules[@]}"
