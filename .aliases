@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+# TODO: Make 'update' alias available on path (move ~/update.sh to /usr/bin/update)
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias pyc='find ./ -name "*.pyc" -print'
 alias rmpyc='find ./ -name "*.pyc" -delete'
