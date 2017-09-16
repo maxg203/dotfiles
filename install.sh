@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 cd ~/
 
 echo && echo "CLONING DOTFILES FROM GITHUB..."
@@ -16,7 +16,6 @@ else
 fi
 
 echo && echo "CONFIGURING ALIASES..."
-# XXX: Can't source scripts until after installation has finished for some reason
 source ~/.aliases
 
 echo && echo "INSTALLING DEPENDENCIES..."
