@@ -1,5 +1,4 @@
-# Should be a flag so as not to slow down the script when I don't need it to
-# source ~/.provision/install_dependencies.sh
+#!/bin/zsh
 
 config pull >~/.git_update.out
 source ~/.vimrc

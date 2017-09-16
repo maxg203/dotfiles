@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 cd ~/
 
 echo && echo "CLONING DOTFILES FROM GITHUB..."

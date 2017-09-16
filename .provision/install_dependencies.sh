@@ -1,3 +1,4 @@
+#!/bin/zsh
 install_system() {
     if [ -x "$(command -v brew)" ]; then
         brew install $1
@@ -16,7 +17,7 @@ fi
 declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh')
 for package in "${system_packages[@]}"
 do
-    echo "Installing ${package}..."
+    echo "Trying to install ${package}..."
     install_system ${package}
 done
 
@@ -26,5 +27,6 @@ nvm use 8.5.0
 declare -a node_modules=('pure-prompt')
 for module in "${node_modules[@]}"
 do
+    echo "Trying to install ${module}..."
     npm install -g ${module}
 done
