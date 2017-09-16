@@ -17,7 +17,7 @@ declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh')
 for system_package in "${system_packages[@]}"
 do
     echo "Installing ${system_package}..."
-    install_system package
+    install_system $package
 done
 
 declare -a node_modules=('pure-prompt')
