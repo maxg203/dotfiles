@@ -70,3 +70,6 @@ antigen apply
 
 autoload -U promptinit; promptinit
 prompt pure
+
+touch ~/.secure || exit
+source ~/.secure

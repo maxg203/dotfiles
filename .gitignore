@@ -1,5 +1,5 @@
 .vim/bundle/*
 .cfg
 .virtualenvs
-.bash_secure
+.secure
 .zsh_history
