@@ -1,14 +1,10 @@
 #!/bin/bash
 
-# TODO: Give prompt N as default like it says rather than forcing user input
-while true; do
-    read "?Would you like to check dependencies [y/N]?" yn
-    case $yn in
-        [Yy]* ) source ~/.provision/install_dependencies.sh; break;;
-        *) break;;
-    esac
-done
-source ~/update.sh >/dev/null &
+echo 'INSTALLING DEPENDENCIES...'
+source ~/.provision/install_dependencies.sh
+
+echo 'RELOADING...'
+source ~/.provision/_reload.sh >/dev/null &
 
 for i in `seq 0 10`
 do
