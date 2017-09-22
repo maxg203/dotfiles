@@ -28,8 +28,6 @@ export WORKON_HOME=$HOME/.virtualenvs
 case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 source /usr/local/bin/virtualenvwrapper.sh
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
 # if [ -d ~/projects ]; then
 #     cd ~/projects
 # fi
