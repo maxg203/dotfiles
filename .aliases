@@ -15,3 +15,6 @@ alias phplines='find ./ -path "*.php" -type f | xargs wc -l'
 alias fatodos='grep -r "# TODO" .'
 alias fabad='grep -r "# XXX" .'
 alias c='clear'
+
+# TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
+alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"
