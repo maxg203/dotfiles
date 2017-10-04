@@ -11,7 +11,7 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 Now manage your dotfiles just like any other repository except that you should now use the `config` alias instead of `git`.
 
 ## Install these dotfiles on another system
-**Warning:** This will replace existing dotfiles if you already have any installed locally. Because mine are better.
+**Warning:** This will replace existing dotfiles if you already have any installed locally. Because mine are better. :+1:
 ``` shell
 curl -o- https://raw.githubusercontent.com/maxg203/dotfiles/master/install.sh | sh
 ```
@@ -23,4 +23,4 @@ Use the `config` alias in place of `git` (i.e. `config status` would be equivila
 Once installed, use the alias `update` to pull the latest changes from this repository, source the dotfiles and check that all the vim has all its plugins installed.
 
 ## My Terminals
-I personally use the Xenial default GNOME Terminal on Linux and iTerm2 on macOS. These dotfiles work great with these especially in my opinion. I do not use Windows for development much so if you do... good luck!
+I personally use the Ubuntu 16.04 (Xenial) default GNOME Terminal on Linux and iTerm2 on macOS High Sierra. These dotfiles work great especially with these in my opinion. I do not use Windows for development much so if you do... good luck!
