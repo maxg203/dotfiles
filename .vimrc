@@ -26,6 +26,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'keith/swift.vim'
 Plugin 'ElmCast/elm-vim'
+Plugin 'stephpy/vim-php-cs-fixer'
 
 call vundle#end()
 
