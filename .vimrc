@@ -27,6 +27,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'keith/swift.vim'
 Plugin 'ElmCast/elm-vim'
 Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
@@ -51,6 +52,10 @@ let g:solarized_visibility="high"
 let g:airline_theme='dark'
 set background=dark
 colorscheme solarized
+
+" Settings for React
+let g:jsx_ext_required = 0
+
 
 " Fix vim search
 set hlsearch
