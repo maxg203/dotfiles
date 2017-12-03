@@ -26,6 +26,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'keith/swift.vim'
 Plugin 'ElmCast/elm-vim'
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
@@ -51,6 +53,10 @@ let g:airline_theme='dark'
 set background=dark
 colorscheme solarized
 
+" Settings for React
+let g:jsx_ext_required = 0
+
+
 " Fix vim search
 set hlsearch
 set incsearch
@@ -65,7 +71,11 @@ set copyindent
 
 autocmd FileType javascript setlocal sw=2 ts=2 sts=2 expandtab number
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2 expandtab number
+autocmd FileType javascript setlocal sw=2 ts=2 sts=2 expandtab number
+autocmd FileType javascript.jsx setlocal sw=2 ts=2 sts=2 expandtab number
 autocmd FileType python setlocal sw=4 ts=4 sts=4 expandtab nonumber
+autocmd FileType php setlocal sw=4 ts=4 sts=4 expandtab nonumber
+autocmd FileType html setlocal sw=2 ts=2 sts=2 expandtab nonumber
 autocmd FileType elm setlocal sw=4 sts=4 ts=4 nonumber
 autocmd FileType yaml setlocal sw=2 sts=2 ts=2 expandtab number
 

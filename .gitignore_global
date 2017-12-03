@@ -1,0 +1,5 @@
+.php_cs.cache
+*.swo
+*.swp
+*.swn
+*.swm

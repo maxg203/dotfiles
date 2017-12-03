@@ -1,3 +1,5 @@
+*.swo
+*.swp
 .vim/bundle/*
 .cfg
 .virtualenvs
