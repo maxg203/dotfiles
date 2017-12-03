@@ -63,6 +63,7 @@ set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set copyindent
 
+autocmd FileType javascript setlocal sw=2 ts=2 sts=2 expandtab number
 autocmd FileType typescript setlocal sw=2 ts=2 sts=2 expandtab number
 autocmd FileType python setlocal sw=4 ts=4 sts=4 expandtab nonumber
 autocmd FileType elm setlocal sw=4 sts=4 ts=4 nonumber
