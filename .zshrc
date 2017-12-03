@@ -1,3 +1,4 @@
+export PATH=$PATH:/Users/Max/.composer
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -24,6 +25,7 @@ export EVENT_NOKQUEUE=1
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH=$PATH:/Users/Max/.composer/vendor/bin
 export WORKON_HOME=$HOME/.virtualenvs
 case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 source /usr/local/bin/virtualenvwrapper.sh
