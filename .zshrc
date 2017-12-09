@@ -71,5 +71,7 @@ antigen apply
 autoload -U promptinit; promptinit
 prompt pure
 
+PURE_CMD_MAX_EXEC_TIME=2
+
 touch ~/.secure || exit
 source ~/.secure
