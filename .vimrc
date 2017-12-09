@@ -105,4 +105,4 @@ set pastetoggle=<leader>b
 
 nnoremap <leader>d iimport pudb; pudb.set_trace()<Esc>
 nnoremap <C-U> :GundoToggle<CR>
-nnoremap <C-M> :make<CR>
+nnoremap <CR> <nop>
