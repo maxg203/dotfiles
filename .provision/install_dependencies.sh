@@ -1,4 +1,5 @@
 #!/bin/zsh
+
 install_system() {
     if [ -x "$(command -v brew)" ]; then
         brew install $1
