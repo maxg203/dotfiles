@@ -75,3 +75,8 @@ PURE_CMD_MAX_EXEC_TIME=2
 
 touch ~/.secure || exit
 source ~/.secure
+
+# Add humour
+if [ "$PS1" ]; then
+    curl -sH "Accept: text/plain" https://icanhazdadjoke.com/ | cowsay
+fi
