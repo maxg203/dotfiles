@@ -1,4 +1,5 @@
 #!/bin/zsh
+
 install_system() {
     if [ -x "$(command -v brew)" ]; then
         brew install $1
@@ -14,7 +15,7 @@ if [ -x "$(command -v apt-get)" ]; then
     sudo apt-get update -y
 fi
 
-declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh')
+declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh' 'caskroom/cask/meld')
 for package in "${system_packages[@]}"
 do
     echo "Trying to install ${package}..."

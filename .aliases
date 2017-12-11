@@ -17,7 +17,7 @@ alias rmswp='find . -type f -name "*.sw[klmnop]" -delete'
 alias fatodos='grep -r "# TODO" .'
 alias fabad='grep -r "# XXX" .'
 alias c='clear'
-alias maxg-dev='docker exec -it $(docker ps | grep maxg_dev | awk '{print $1}') bash'
+alias maxg-dev="docker exec -it $(docker ps | grep maxg_dev | awk '{print $1}') bash"
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
 alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"

@@ -1,3 +1,4 @@
+export PATH=$PATH:/Users/Max/.composer
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -24,6 +25,7 @@ export EVENT_NOKQUEUE=1
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH=$PATH:/Users/Max/.composer/vendor/bin
 export WORKON_HOME=$HOME/.virtualenvs
 case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 source /usr/local/bin/virtualenvwrapper.sh
@@ -40,7 +42,6 @@ export PATH=$PATH:/usr/local/bin
 # Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 touch ~/.bash_secure || exit
 source ~/.bash_secure
@@ -69,5 +70,12 @@ antigen apply
 autoload -U promptinit; promptinit
 prompt pure
 
+PURE_CMD_MAX_EXEC_TIME=2
+
 touch ~/.secure || exit
 source ~/.secure
+
+# Add humour
+if [ "$PS1" ]; then
+    curl -sH "Accept: text/plain" https://icanhazdadjoke.com/ | cowsay
+fi
