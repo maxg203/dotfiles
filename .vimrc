@@ -106,3 +106,9 @@ set pastetoggle=<leader>b
 nnoremap <leader>d iimport pudb; pudb.set_trace()<Esc>
 nnoremap <C-U> :GundoToggle<CR>
 nnoremap <CR> <nop>
+
+" For local replace
+nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
+
+" For global replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
