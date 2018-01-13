@@ -2,6 +2,7 @@
 *.swo
 *.swp
 .vim/bundle/*
+.vim/.netrwhist
 .cfg
 .virtualenvs
 .secure
