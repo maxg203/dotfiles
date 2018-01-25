@@ -38,6 +38,7 @@ fi
 eval $(thefuck --alias)
 
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:~/.composer/vendor/bin
 
 # Node
 export NVM_DIR="$HOME/.nvm"
