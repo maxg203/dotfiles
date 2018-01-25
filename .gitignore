@@ -1,6 +1,8 @@
+*.sqlite3
 *.swo
 *.swp
 .vim/bundle/*
+.vim/.netrwhist
 .cfg
 .virtualenvs
 .secure
