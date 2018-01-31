@@ -23,6 +23,7 @@ alias gbd='git rev-list --left-right --count'
 alias mta='make test:all'
 alias mtu='make test:unit'
 alias mtf='make test:functional'
+alias cmf='cat -e -t -v'
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
 alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"
