@@ -19,9 +19,11 @@ alias fabad='grep -r "# XXX" .'
 alias c='clear'
 alias maxg-dev="docker exec -it $(docker ps | grep maxg_dev | awk '{print $1}') bash"
 alias gmtm='git mergetool --no-prompt --tool=meld'
+alias gbd='git rev-list --left-right --count'
 alias mta='make test:all'
 alias mtu='make test:unit'
 alias mtf='make test:functional'
+alias cmf='cat -e -t -v'
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
 alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"

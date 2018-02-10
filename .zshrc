@@ -27,7 +27,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH=$PATH:/Users/Max/.composer/vendor/bin
 export WORKON_HOME=$HOME/.virtualenvs
-case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+# case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 source /usr/local/bin/virtualenvwrapper.sh
 
 if [ -d ~/projects ]; then
@@ -38,6 +40,7 @@ fi
 eval $(thefuck --alias)
 
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:~/.composer/vendor/bin
 
 # Node
 export NVM_DIR="$HOME/.nvm"
@@ -67,6 +70,8 @@ autoload -U promptinit; promptinit
 prompt pure
 
 PURE_CMD_MAX_EXEC_TIME=2
+
+export SHELL=/bin/zsh
 
 touch ~/.secure || exit
 source ~/.secure
