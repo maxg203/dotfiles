@@ -58,7 +58,7 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme ""
+antigen theme "zsh"
 
 # Tell Antigen that you're done.
 antigen apply
@@ -72,6 +72,6 @@ touch ~/.secure || exit
 source ~/.secure
 
 # Add humour
-if [ "$PS1" ]; then
-    curl -sH "Accept: text/plain" https://icanhazdadjoke.com/ | cowsay
-fi
+# if [ "$PS1" ]; then
+#     curl -sH "Accept: text/plain" https://icanhazdadjoke.com/ | cowsay
+# fi
