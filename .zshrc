@@ -80,3 +80,6 @@ source ~/.secure
 # if [ "$PS1" ]; then
 #     curl -sH "Accept: text/plain" https://icanhazdadjoke.com/ | cowsay
 # fi
+
+# Dothub
+export HUB_USERNAME=maxg203
