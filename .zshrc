@@ -61,15 +61,15 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme "zsh"
+antigen theme ""
 
 # Tell Antigen that you're done.
 antigen apply
 
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
-PURE_CMD_MAX_EXEC_TIME=2
+# PURE_CMD_MAX_EXEC_TIME=2
 
 export SHELL=/bin/zsh
 
