@@ -1,13 +1,6 @@
 export PATH=$PATH:/Users/Max/.composer
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
 export ZSH=/Users/Max/.oh-my-zsh
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# export ZSH_THEME="bodger"
 export DISABLE_AUTO_UPDATE="true"
 
 # If not running interactively, don't do anything
@@ -28,6 +21,7 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH=$PATH:/Users/Max/.composer/vendor/bin
 export WORKON_HOME=$HOME/.virtualenvs
 
+export ZSH_THEME=bodger
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 # case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 source /usr/local/bin/virtualenvwrapper.sh
@@ -61,7 +55,7 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme ""
+antigen theme robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
