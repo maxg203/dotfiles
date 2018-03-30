@@ -58,6 +58,8 @@ colorscheme solarized
 " Settings for React
 let g:jsx_ext_required = 0
 
+" Enable eslint via syntastic if it is installed globally
+let g:syntastic_javascript_checkers=['eslint']
 
 " Fix vim search
 set hlsearch
@@ -72,7 +74,8 @@ autocmd FileType php setlocal sw=4 ts=4 sts=4 expandtab nonumber
 autocmd FileType html setlocal sw=2 ts=2 sts=2 expandtab nonumber
 autocmd FileType elm setlocal sw=4 sts=4 ts=4 nonumber
 autocmd FileType yaml setlocal sw=2 sts=2 ts=2 expandtab number
-autocmd FileType vue syntax sync fromstart setlocal sw=2 ts=2 sts=2 expandtab number
+autocmd FileType vue syntax sync fromstart
+autocmd FileType vue setlocal sw=2 ts=2 sts=2 expandtab number
 
 " Highlight long line endings
 " TODO: Apply this to Python files only, below is broken
