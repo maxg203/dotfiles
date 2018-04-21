@@ -30,6 +30,7 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'mxw/vim-jsx'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'posva/vim-vue'
+Plugin 'lervag/vimtex'
 
 call vundle#end()
 
@@ -76,6 +77,10 @@ autocmd FileType elm setlocal sw=4 sts=4 ts=4 nonumber
 autocmd FileType yaml setlocal sw=2 sts=2 ts=2 expandtab number
 autocmd FileType vue syntax sync fromstart
 autocmd FileType vue setlocal sw=2 ts=2 sts=2 expandtab number
+autocmd FileType tex setlocal sw=2 ts=2 sts=2 expandtab number
+
+" Automatically compile LateX documents
+:autocmd BufWritePost *.tex silent! !pdflatex <afile>
 
 " Highlight long line endings
 " TODO: Apply this to Python files only, below is broken

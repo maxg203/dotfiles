@@ -22,6 +22,8 @@ do
     install_system ${package}
 done
 
+brew cask install mactex
+
 nvm install 8.5.0
 nvm use 8.5.0
 
