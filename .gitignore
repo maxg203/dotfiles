@@ -1,6 +1,7 @@
 *.sqlite3
 *.swo
 *.swp
+*.pyc
 .vim/bundle/*
 .vim/.netrwhist
 .cfg
