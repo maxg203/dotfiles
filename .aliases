@@ -10,6 +10,7 @@ alias update='source ~/.provision/_update.sh'
 alias reload='source ~/.provision/_reload.sh'
 alias tslines='find ./ -path "*.ts" -type f | xargs wc -l'
 alias pylines='find ./ -path "*.py" -type f | xargs wc -l'
+alias clines='find ./ -path "*.c" -type f | xargs wc -l'
 alias phplines='find ./ -path "*.php" -type f | xargs wc -l'
 alias jslines='find ./ -path "*.js" -type f | xargs wc -l'
 alias jsxlines='find ./ -path "*.jsx" -type f | xargs wc -l'
@@ -26,6 +27,8 @@ alias mtf='make test:functional'
 alias rf8="flake8 . --exclude=*/migrations,*/*/migrations --max-line-length=100 | nl"
 alias cmf='cat -etv'
 alias maxima="exec '/Applications/Maxima.app/Contents/Resources/maxima.sh'"
+alias ctags="`brew --prefix`/bin/ctags"
+alias cpython="sudo make -s -j4 && python3 -c \"print('-' * 80 + '\n')\" && ./python.exe"
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
 alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"
