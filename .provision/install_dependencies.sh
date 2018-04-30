@@ -15,7 +15,7 @@ if [ -x "$(command -v apt-get)" ]; then
     sudo apt-get update -y
 fi
 
-declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh' 'caskroom/cask/meld')
+declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh' 'caskroom/cask/meld' 'ctags')
 for package in "${system_packages[@]}"
 do
     echo "Trying to install ${package}..."
