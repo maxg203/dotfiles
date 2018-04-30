@@ -23,7 +23,7 @@ alias gmtm='git mergetool --no-prompt --tool=meld'
 alias gbd='git rev-list --left-right --count'
 alias mta='make test:all'
 alias mtu='make test:unit'
-alias mtf='make test:functional'
+alias mtf='make test:func'
 alias rf8="flake8 . --exclude=*/migrations,*/*/migrations --max-line-length=100 | nl"
 alias cmf='cat -etv'
 alias maxima="exec '/Applications/Maxima.app/Contents/Resources/maxima.sh'"
