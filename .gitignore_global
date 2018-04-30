@@ -1,4 +1,5 @@
 .php_cs.cache
+tags
 *.swo
 *.swp
 *.swn
