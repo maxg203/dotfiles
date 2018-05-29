@@ -78,6 +78,7 @@ autocmd FileType yaml setlocal sw=2 sts=2 ts=2 expandtab number
 autocmd FileType vue syntax sync fromstart
 autocmd FileType vue setlocal sw=2 ts=2 sts=2 expandtab number
 autocmd FileType tex setlocal sw=2 ts=2 sts=2 expandtab number
+autocmd FileType sh setlocal sw=4 ts=4 sts=4 expandtab number
 
 " Automatically compile LateX documents
 :autocmd BufWritePost *.tex silent! !pdflatex <afile>
