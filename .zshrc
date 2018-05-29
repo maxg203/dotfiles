@@ -36,6 +36,7 @@ eval $(thefuck --alias)
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:~/.composer/vendor/bin
 export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
+export PATH=$PATH:~/.provision
 
 # Node
 export NVM_DIR="$HOME/.nvm"

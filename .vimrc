@@ -30,7 +30,8 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'mxw/vim-jsx'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'posva/vim-vue'
-Plugin 'lervag/vimtex'
+" Plugin 'lervag/vimtex'
+" Plugin 'klen/python-mode'
 
 call vundle#end()
 
@@ -61,6 +62,13 @@ let g:jsx_ext_required = 0
 
 " Enable eslint via syntastic if it is installed globally
 let g:syntastic_javascript_checkers=['eslint']
+
+" let g:pymode_lint = 0
+" set foldmethod=syntax
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 " Fix vim search
 set hlsearch
@@ -100,7 +108,7 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-let mapleader="'"
+let mapleader=" "
 
 set omnifunc=syntaxcomplete#Complete
 
@@ -119,3 +127,5 @@ nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 " Write file using sudo
 cmap w!! w !sudo tee > /dev/null %
+
+nnoremap <leader>r :!!<CR>

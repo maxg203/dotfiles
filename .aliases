@@ -6,8 +6,6 @@ alias pyc='find ./ -name "*.pyc" -print'
 alias rmpyc='find ./ -name "*.pyc" -delete'
 alias v='vim'
 alias nv='nvim'
-alias update='source ~/.provision/_update.sh'
-alias reload='source ~/.provision/_reload.sh'
 alias tslines='find ./ -path "*.ts" -type f | xargs wc -l'
 alias pylines='find ./ -path "*.py" -type f | xargs wc -l'
 alias clines='find ./ -path "*.c" -type f | xargs wc -l'
@@ -24,8 +22,8 @@ alias gbd='git rev-list --left-right --count'
 alias mta='make test:all'
 alias mtu='make test:unit'
 alias mtf='make test:func'
-alias rf8="flake8 . --exclude=*/migrations,*/*/migrations --max-line-length=100 | nl"
 alias cmf='cat -etv'
+alias rf8="flake8 . --exclude=*/migrations,*/*/migrations,*/__init__.py --max-line-length=100 | nl"
 alias maxima="exec '/Applications/Maxima.app/Contents/Resources/maxima.sh'"
 alias ctags="`brew --prefix`/bin/ctags"
 alias cpython="sudo make -s -j4 && python3 -c \"print('-' * 80 + '\n')\" && ./python.exe"

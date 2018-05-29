@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Welcome to my dotfiles CLI!
+#
+# My dotfiles CLI provides a few useful commands for updating and managing
+# these dotfiles, although it cane used for whatever I may find useful!
+
+if [ "$1" == "reload"   ]; then
+	source ~/.provision/_reload.sh
+elif [ "$1" == "update"  ]; then
+	source ~/.provision/_update.sh
+else
+	echo "Invalid command."
+fi
