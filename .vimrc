@@ -128,4 +128,7 @@ nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 " Write file using sudo
 cmap w!! w !sudo tee > /dev/null %
 
+" Prettify JSON
+cmap fj %!python -m json.tool
+
 nnoremap <leader>r :!!<CR>
