@@ -10,5 +10,5 @@ if [ "$1" == "reload"   ]; then
 elif [ "$1" == "update"  ]; then
 	source ~/.provision/_update.sh
 else
-	echo "Invalid command."
+    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME "$@"
 fi
