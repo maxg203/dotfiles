@@ -27,6 +27,7 @@ alias maxima="exec '/Applications/Maxima.app/Contents/Resources/maxima.sh'"
 alias ctags="`brew --prefix`/bin/ctags"
 alias cpython="sudo make -s -j4 && python3 -c \"print('-' * 80 + '\n')\" && ./python.exe"
 alias ducks="du -cksh * | sort -hr | head -n 15"
+alias showjava="/usr/libexec/java_home -V"
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
 alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"
