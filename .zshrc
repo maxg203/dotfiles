@@ -69,9 +69,6 @@ antigen apply
 
 export SHELL=/bin/zsh
 
-touch ~/.secure || exit
-source ~/.secure
-
 # Add humour
 # if [ "$PS1" ]; then
 #     curl -sH "Accept: text/plain" https://icanhazdadjoke.com/ | cowsay
@@ -79,3 +76,6 @@ source ~/.secure
 
 # Dothub
 export HUB_USERNAME=maxg203
+
+touch ~/.secure || exit
+source ~/.secure
