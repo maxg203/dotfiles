@@ -5,9 +5,9 @@
 # My dotfiles CLI provides a few useful commands for updating and managing
 # these dotfiles, although it cane used for whatever I may find useful!
 
-if [ "$1" == "reload"   ]; then
+if [ "$1" == "reload" ]; then
 	source ~/.provision/_reload.sh
-elif [ "$1" == "update"  ]; then
+elif [ "$1" == "update" ]; then
 	source ~/.provision/_update.sh
 else
     /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME "$@"
