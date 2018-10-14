@@ -30,4 +30,21 @@ alias ducks="du -cksh * | sort -hr | head -n 15"
 alias showjava="/usr/libexec/java_home -V"
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
-alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"
+# alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"
+function gchl() {
+    if [[ $1 == "--conf" ]] || [[ $1 == "-c" ]] ; then
+        GIT=conf
+    elif [[ $1 == "" ]]; then
+        GIT=git
+    else
+        echo "ERROR: Invalid argument(s)."
+        return;
+    fi
+
+    NUM=$($GIT diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc)
+	if [[ $NUM ]]; then
+        echo "$NUM lines changed."
+    else
+        echo "0 lines changes."
+    fi
+}
