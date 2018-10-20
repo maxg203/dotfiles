@@ -20,18 +20,13 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'sjl/gundo.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'keith/swift.vim'
-Plugin 'ElmCast/elm-vim'
-Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'mxw/vim-jsx'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'posva/vim-vue'
-" Plugin 'lervag/vimtex'
-" Plugin 'klen/python-mode'
 
 call vundle#end()
 
