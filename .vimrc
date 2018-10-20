@@ -128,6 +128,7 @@ cmap fj %!python -m json.tool
 
 nnoremap <leader>r :!!<CR>
 
+" IMproved :e settings
 set wildmenu
 set wildignore=*.o,*.pyc,*.bak,*.jpg,*.jpeg,*.png,*.gif
 set wildmode=list
