@@ -128,3 +128,9 @@ cmap w!! w !sudo tee > /dev/null %
 cmap fj %!python -m json.tool
 
 nnoremap <leader>r :!!<CR>
+
+set wildmenu
+set wildignore=*.o,*.pyc,*.bak,*.jpg,*.jpeg,*.png,*.gif
+set wildmode=list
+set autochdir
+let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
