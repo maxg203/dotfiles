@@ -17,10 +17,10 @@ curl -o- https://raw.githubusercontent.com/maxg203/dotfiles/master/install.sh | 
 ```
 
 ## Usage
-Use the `config` alias in place of `git` (i.e. `config status` would be equivilant to `git status` within a normal git repo). You can do this in any directory to manage your dotfiles.
+Use the `conf` alias in place of `git` (i.e. `conf status` would be equivilant to `git status` within a normal git repo). You can do this in any directory to manage your dotfiles.
 
 ## Update
-Once installed, use the alias `update` to pull the latest changes from this repository, source the dotfiles and check that all the vim has all its plugins installed.
+Once installed, use `conf update` (which should now be available on your path) to pull the latest changes from this repository, source the dotfiles and check that all the vim has all its plugins installed.
 
 ## My Terminals
 I personally use the Ubuntu 18.04 (Bionic) default GNOME Terminal on Linux and iTerm2 on macOS Mojave. These dotfiles work great especially with these in my opinion. I do not use Windows for development very often so if you do... good luck!
