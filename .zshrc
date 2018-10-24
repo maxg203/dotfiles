@@ -1,8 +1,3 @@
-export PATH=$PATH:/Users/Max/.composer
-export ZSH=/Users/Max/.oh-my-zsh
-# export ZSH_THEME="bodger"
-export DISABLE_AUTO_UPDATE="true"
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -13,17 +8,6 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-# Fix tmux issue on macOS Sierra
-export EVENT_NOKQUEUE=1
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-export PATH=$PATH:/Users/Max/.composer/vendor/bin
-export WORKON_HOME=$HOME/.virtualenvs
-
-export ZSH_THEME=bodger
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-# case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 source /usr/local/bin/virtualenvwrapper.sh
 
 if [ -d ~/projects ]; then
@@ -33,10 +17,19 @@ fi
 # eval "$(rbenv init -)"
 eval $(thefuck --alias)
 
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:~/.composer/vendor/bin
-export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
-export PATH=$PATH:~/.provision
+# Misc. Environment Variables
+export ZSH=/Users/Max/.oh-my-zsh
+# export ZSH_THEME="bodger"
+export DISABLE_AUTO_UPDATE="true"
+
+# Fix tmux issue on macOS Sierra
+export EVENT_NOKQUEUE=1
+
+export WORKON_HOME=$HOME/.virtualenvs
+export ZSH_THEME=bodger
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+# case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
+
 
 # Node
 export NVM_DIR="$HOME/.nvm"
@@ -95,6 +88,8 @@ export KEYTIMEOUT=1
 
 # Dothub
 export HUB_USERNAME=maxg203
+
+source ~/.zsh/path.sh
 
 touch ~/.secure || exit
 source ~/.secure
