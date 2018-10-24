@@ -1,0 +1,19 @@
+---
+
+- name: Provision Dev Environment
+  connection: local
+  hosts: localhost
+  tasks:
+
+    - name: Install htop
+      package:
+        name: htop
+        state: present
+      with_items:
+        - python3
+        - cowsay
+        - vim
+        - npm
+        - thefuck
+        - zsh
+        - ctags

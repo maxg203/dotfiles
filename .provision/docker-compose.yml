@@ -1,0 +1,7 @@
+version: '3'
+services:
+  dotfiles_dev:
+    container_name: dotfiles_dev
+    build: .
+    volumes:
+      - ./ansible:/home/ubuntu/ansible

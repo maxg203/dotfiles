@@ -2,6 +2,7 @@
 *.swo
 *.swp
 *.pyc
+*.retry
 .vim/bundle/*
 .vim/.netrwhist
 .cfg
