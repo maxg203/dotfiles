@@ -15,7 +15,7 @@ if [ -x "$(command -v apt-get)" ]; then
     sudo apt-get update -y
 fi
 
-declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh' 'caskroom/cask/meld' 'ctags')
+declare -a system_packages=('cowsay' 'nodejs-legacy' 'npm' 'thefuck' 'zsh' 'caskroom/cask/meld' 'ctags' 'tmux')
 for package in "${system_packages[@]}"
 do
     echo "Trying to install ${package}..."
@@ -33,3 +33,5 @@ do
     echo "Trying to install ${module}..."
     npm install -g ${module}
 done
+
+sudo pip install tmuxp

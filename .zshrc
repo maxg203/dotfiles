@@ -27,9 +27,12 @@ export DISABLE_AUTO_UPDATE="true"
 # Fix tmux issue on macOS Sierra
 export EVENT_NOKQUEUE=1
 
+# For tmuxp load configurations
+export DISABLE_AUTO_TITLE='true'
+
 export WORKON_HOME=$HOME/.virtualenvs
 export ZSH_THEME=robbyrussell
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 # case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 
 source /usr/local/bin/virtualenvwrapper.sh
