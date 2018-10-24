@@ -32,6 +32,7 @@ export ZSH_THEME=robbyrussell
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 # case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Node
 export NVM_DIR="$HOME/.nvm"
