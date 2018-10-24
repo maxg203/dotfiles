@@ -9,8 +9,9 @@ case $- in
       *) return;;
 esac
 
+# File/Directory Conditionals
 if [ -f ~/.aliases ]; then
-    . ~/.aliases
+    source ~/.aliases
 fi
 
 if [ -d ~/projects ]; then
@@ -18,10 +19,19 @@ if [ -d ~/projects ]; then
 fi
 
 # eval "$(rbenv init -)"
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
+
+# ZSH
+plugins=(
+  git
+  zsh-syntax-highlighting
+)
+
+ZSH=~/.oh-my-zsh
+ZSH_THEME=robbyrussell
+source $ZSH/oh-my-zsh.sh
 
 # Misc. Environment Variables
-export ZSH=/Users/Max/.oh-my-zsh
 export DISABLE_AUTO_UPDATE="true"
 
 # Fix tmux issue on macOS Sierra
@@ -30,42 +40,20 @@ export EVENT_NOKQUEUE=1
 # For tmuxp load configurations
 export DISABLE_AUTO_TITLE='true'
 
+# Virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
-export ZSH_THEME=robbyrussell
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 # case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 
 source /usr/local/bin/virtualenvwrapper.sh
-
-# Node
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# --- VERY SLOW ---
+# # Node
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# -----------------
 
 touch ~/.bash_secure || exit
 source ~/.bash_secure
-
-source ~/.antigen.zsh
-
-fpath+=($fpath "${HOME}/.nvm/versions/node/v8.5.0/lib/node_modules/pure-prompt/functions")
-
-# antigen use oh-my-zsh
-
-# # Bundles from the default repo (robbyrussell's oh-my-zsh).
-# antigen bundle git
-#
-# # Syntax highlighting bundle.
-# # antigen bundle zsh-users/zsh-syntax-highlighting
-#
-# # Load the theme.
-# antigen theme robbyrussell
-#
-# # Tell Antigen that you're done.
-# antigen apply
-#
-# autoload -U promptinit; promptinit
-# prompt pure
-#
-# PURE_CMD_MAX_EXEC_TIME=2
 
 export SHELL=/bin/zsh
 
@@ -104,7 +92,6 @@ function {
     t1=$(date '+%s')
     startup=$(( t1 - t0 ))
     [[ $startup -gt 1 ]] && print "Hmm, poor shell startup time: $startup seconds!"
-    ##print "startup time: $startup"
 }
 
-unset t0
+unset t0 t1
