@@ -134,3 +134,5 @@ set wildmenu
 set wildignore=*.o,*.pyc,*.bak,*.jpg,*.jpeg,*.png,*.gif
 set wildmode=list:longest,full
 let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
+
+set clipboard=unnamed
