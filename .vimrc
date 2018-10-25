@@ -132,6 +132,5 @@ nnoremap <leader>r :!!<CR>
 " IMproved :e settings
 set wildmenu
 set wildignore=*.o,*.pyc,*.bak,*.jpg,*.jpeg,*.png,*.gif
-set wildmode=list
-set autochdir
+set wildmode=list:longest,full
 let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
