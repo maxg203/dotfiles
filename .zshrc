@@ -41,11 +41,11 @@ export EVENT_NOKQUEUE=1
 export DISABLE_AUTO_TITLE='true'
 
 # Virtual environments
+source /usr/local/bin/virtualenvwrapper.sh
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 # case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 
-source /usr/local/bin/virtualenvwrapper.sh
 # --- VERY SLOW ---
 # # Node
 # export NVM_DIR="$HOME/.nvm"
