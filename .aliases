@@ -52,3 +52,8 @@ function gchl() {
         echo "0 lines changes."
     fi
 }
+
+# Add yaml validator, takes path to yaml file as input
+function yaml() {
+    ruby -e "require 'yaml';puts YAML.load_file('$1')"
+}
