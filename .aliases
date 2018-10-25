@@ -33,6 +33,7 @@ alias time="/usr/bin/time"
 # alias remotevim="vim -c ':source scp://$USER@$(nslookup mach_name | head -1 | awk '{ print $2  }')//$HOME/.vimrc'"
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
+# Battery percentage on right side?
 # alias gchl="git diff --numstat |  cut -d$'\t' -f 1 | paste -sd+ - | bc"
 function gchl() {
     if [[ $1 == "--conf" ]] || [[ $1 == "-c" ]] ; then
