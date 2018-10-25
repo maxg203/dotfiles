@@ -40,6 +40,10 @@ export EVENT_NOKQUEUE=1
 # For tmuxp load configurations
 export DISABLE_AUTO_TITLE='true'
 
+# Fix unexpected sed error
+export LC_CTYPE=C
+export LANG=C
+
 # Virtual environments
 source /usr/local/bin/virtualenvwrapper.sh
 export WORKON_HOME=$HOME/.virtualenvs
