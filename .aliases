@@ -28,6 +28,7 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias cpython="sudo make -s -j4 && python3 -c \"print('-' * 80 + '\n')\" && ./python.exe"
 alias ducks="du -cksh * | sort -hr | head -n 15"
 alias showjava="/usr/libexec/java_home -V"
+alias battery="system_profiler SPPowerDataType"
 alias time="/usr/bin/time"
 # alias remotevim="vim -c ':source scp://$USER@$(nslookup mach_name | head -1 | awk '{ print $2  }')//$HOME/.vimrc'"
 
