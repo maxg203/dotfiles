@@ -28,7 +28,7 @@ plugins=(
 )
 
 ZSH=~/.oh-my-zsh
-ZSH_THEME=robbyrussell
+ZSH_THEME=bodger
 source $ZSH/oh-my-zsh.sh
 
 # Misc. Environment Variables
