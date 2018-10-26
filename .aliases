@@ -30,6 +30,8 @@ alias ducks="du -cksh * | sort -hr | head -n 15"
 alias showjava="/usr/libexec/java_home -V"
 alias battery="system_profiler SPPowerDataType"
 alias time="/usr/bin/time"
+alias vimsw='find . -type f -name "*.sw*"'
+alias rmvimsw='find . -type f -name "*.sw*" -delete'
 # alias remotevim="vim -c ':source scp://$USER@$(nslookup mach_name | head -1 | awk '{ print $2  }')//$HOME/.vimrc'"
 
 # TODO: Add integer returned by this to zsh prompt (uncommitted lines changed)
