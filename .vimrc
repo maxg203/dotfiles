@@ -133,7 +133,12 @@ nnoremap <leader>r :!!<CR>
 set wildmenu
 set wildignore=*.o,*.pyc,*.bak,*.jpg,*.jpeg,*.png,*.gif
 set wildmode=list:longest,full
-let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
+
+" Set typical editor file tree on left
+" let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
+" let g:netrw_winsize = 25
+" let g:netrw_browse_split = 2
+let g:netrw_banner = 0
 
 set clipboard=unnamed
 
