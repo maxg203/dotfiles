@@ -24,6 +24,8 @@ set header_cache="~/.mutt/header_cache"
 set message_cachedir="~/.mutt/message_cache/"
 set forward_format="Fw: %s"
 
+set smtp_authenticators = 'gssapi:login'
+
 # Uncomment query_command if you have a script for querying an address book, or
 # the alias_file if you want to maintain one by hand locally
 #set query_command = "/path/to/ldap_search.py '%s'"
