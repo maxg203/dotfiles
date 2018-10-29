@@ -10,7 +10,6 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'sjl/gundo.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
@@ -112,7 +111,6 @@ set omnifunc=syntaxcomplete#Complete
 set pastetoggle=<leader>b
 
 nnoremap <leader>d iimport pudb; pudb.set_trace()<Esc>
-nnoremap <C-U> :GundoToggle<CR>
 nnoremap <CR> <nop>
 
 " For local replace
