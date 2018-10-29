@@ -1,0 +1,11 @@
+# Ignore case if the search string is all lower case
+--smart-case
+
+--type-set
+eco=.eco,.jeco
+
+--type-set
+coffee=.coffee
+
+--ignore-dir=.tox
+--ignore-dir=.cache
