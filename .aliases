@@ -25,6 +25,7 @@ alias cmf='cat -etv'
 alias rf8="flake8 . --exclude=*/migrations,*/*/migrations,*/__init__.py --max-line-length=100 | nl"
 alias maxima="exec '/Applications/Maxima.app/Contents/Resources/maxima.sh'"
 alias ctags="`brew --prefix`/bin/ctags"
+alias python='python3'
 alias cpython="sudo make -s -j4 && python3 -c \"print('-' * 80 + '\n')\" && ./python.exe"
 alias ducks="du -cksh * | sort -hr | head -n 15"
 alias showjava="/usr/libexec/java_home -V"
