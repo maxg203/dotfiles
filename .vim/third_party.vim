@@ -16,3 +16,8 @@ let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
 " let g:netrw_winsize = 25
 " let g:netrw_browse_split = 2
 let g:netrw_banner = 0
+
+" Tmux runner
+let g:VtrStripLeadingWhitespace = 0
+let g:VtrClearEmptyLines = 0
+let g:VtrAppendNewline = 1
