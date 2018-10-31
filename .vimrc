@@ -1,6 +1,6 @@
 filetype off
 
-let mapleader=" "
+let mapleader=' '
 
 so ~/.vim/plugins.vim
 so ~/.vim/color_scheme.vim
@@ -11,7 +11,7 @@ so ~/.vim/third_party.vim
 
 syntax enable
 
-" Automatically compile LateX documents
+" Automatically compile LaTeX documents
 :autocmd BufWritePost *.tex silent! !pdflatex <afile>
 
 " Highlight long line endings
