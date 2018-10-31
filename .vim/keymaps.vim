@@ -23,3 +23,5 @@ nnoremap <C-W>l :vertical resize -15<CR>
 " Tmux runner
 let g:VtrUseVtrMaps = 1
 nnoremap <leader>ar :VtrAttachToPane<cr>
+nnoremap <leader>rc :VtrSendCommandToRunner<cr>
+nnoremap <leader>cc :VtrFlushCommand<cr>
