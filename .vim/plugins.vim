@@ -23,6 +23,7 @@ Plugin 'keith/swift.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'posva/vim-vue'
+Plugin 'christoomey/vim-tmux-runner'
 
 call vundle#end()
 
