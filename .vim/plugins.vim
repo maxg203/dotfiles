@@ -18,12 +18,12 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'keith/swift.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'posva/vim-vue'
 Plugin 'christoomey/vim-tmux-runner'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 
