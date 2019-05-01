@@ -8,3 +8,4 @@ export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:~/.composer/vendor/bin
 export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
 export PATH=$PATH:~/.provision
+export PATH=$PATH:/Users/maxgoodridge/Library/Python/3.7/bin
