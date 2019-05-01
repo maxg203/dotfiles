@@ -28,7 +28,8 @@ plugins=(
 )
 
 ZSH=~/.oh-my-zsh
-ZSH_THEME=bodger
+# ZSH_THEME=bodger
+ZSH_THEME=robbyrussell
 source $ZSH/oh-my-zsh.sh
 
 # Misc. Environment Variables
@@ -45,12 +46,11 @@ export LC_CTYPE=C
 export LANG=C
 
 # Virtual environments
+export VIRTUALENVWRAPPER_PYTHON=python3
 source /usr/local/bin/virtualenvwrapper.sh
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-# case $OSTYPE in darwin*) export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3;; esac
 
-# --- VERY SLOW ---
+# --- VERY SLOW --- (will affect shell startup performance by ~1 second)
 # # Node
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -91,6 +91,9 @@ export HUB_USERNAME=maxg203
 touch ~/.secure || exit
 source ~/.secure
 
+export AWS_SECRET_ACCESS_KEY=$(aws --profile default configure get aws_secret_access_key)
+export AWS_ACCESS_KEY_ID=$(aws --profile default configure get aws_access_key_id)
+
 function {
     local -i t1 startup
     t1=$(date '+%s')
@@ -99,3 +102,10 @@ function {
 }
 
 unset t0 t1
+
+# For Hashicorp Vault autocompletion
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
