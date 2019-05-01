@@ -5,4 +5,4 @@ let g:solarized_termcolors=256
 let g:solarized_visibility="high"
 let g:airline_theme='dark'
 set background=dark
-colorscheme solarized
+" colorscheme solarized
