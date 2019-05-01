@@ -22,13 +22,15 @@ syntax enable
 "     autocmd BufEnter * match OverLength /\%80v.*/
 "   augroup END
 " endif
-if has('matchadd') && &filetype == 'python'
-    :au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-    :au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-else
-    :au BufRead,BufNewFile * syntax match Search /\%<81v.\%>77v/
-    :au BufRead,BufNewFile * syntax match ErrorMsg /\%>80v.\+/
-endif
+"
+" Attempt two - still doesn't just apply to Python files
+" if has('matchadd') && &filetype == 'python'
+"     :au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+"     :au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+" else
+"     :au BufRead,BufNewFile * syntax match Search /\%<81v.\%>77v/
+"     :au BufRead,BufNewFile * syntax match ErrorMsg /\%>80v.\+/
+" endif
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
