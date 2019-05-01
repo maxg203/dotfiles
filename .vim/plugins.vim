@@ -7,7 +7,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jason0x43/vim-js-indent'
@@ -24,6 +24,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'posva/vim-vue'
 Plugin 'christoomey/vim-tmux-runner'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'fatih/vim-go'
+
 
 call vundle#end()
 
