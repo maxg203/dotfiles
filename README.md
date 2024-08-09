@@ -16,6 +16,11 @@ Now manage your dotfiles just like any other repository except that you should n
 curl -o- https://raw.githubusercontent.com/maxg203/dotfiles/master/install.sh | sh
 ```
 
+Optional: Install default apps
+``` shell
+xargs -n 1 arch -arm64 brew install < .provision/work_apps.txt
+``````
+
 ## Usage
 Use the `conf` alias in place of `git` (i.e. `conf status` would be equivilant to `git status` within a normal git repo). You can do this in any directory to manage your dotfiles.
 

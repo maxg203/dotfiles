@@ -1,0 +1,14 @@
+slack
+spotify
+vlc
+iterm2
+visual-studio-code
+brave-browser
+firefox@developer-edition
+mongodb-compass
+pgadmin4
+raycast
+alttab
+hiddenbar
+stats
+keepassxc
